@@ -1,0 +1,75 @@
+<head>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport' />
+  <title>FantasyHub Settings</title>
+</head>
+
+<body>
+
+  {{> Navbar}}
+
+  {{> UserInfo}}
+
+  <div class="container">
+    {{> Settings}}
+  </div>
+
+</body>
+
+<template name="Navbar">
+  <nav class="center-items">
+    <div class="col-xs-4">
+      <img src="/images/back-arrow.png" /> Home
+    </div>
+    <div class="col-xs-4 text-center">
+      <span class="title">Settings</span>
+    </div>
+    <div class="col-xs-4">
+      <img class="pull-right" src="/images/question.png" />
+    </div>
+  </nav>
+</template>
+
+<template name="UserInfo">
+  <div class="profile-blur">
+    <div class="user-bar center-items">
+      <div class="avatar">
+        <div class="streak">
+          <span class="glyphicon glyphicon-fire"></span>
+        </div>
+        <div class="outer">
+        </div>
+      </div>
+      <div class="user-info">
+        <span>Hubert</span>
+        <span class="pull-right">$769.50</span>
+      </div>
+    </div>
+  </div>
+  <div class="user-info">
+    <span>126 - Hotstreak</span>
+    <span class="pull-right">Pending Bonus - $100</span>
+  </div>
+</template>
+
+<template name="Settings">
+  <div class="small-title">Manage Account</div>
+  <div class="list-buttons-group">
+    <div class="list-button">Transactions</div>
+    <div class="list-button">Deposit</div>
+    <div class="list-button">Withdraw</div>
+  </div>
+
+  <div class="small-title">Support</div>
+  <div class="list-buttons-group">
+    <div class="list-button">FAQ</div>
+    <div class="list-button">Rules & Scoring</div>
+    <div class="list-button">Privacy</div>
+    <div class="list-button">Terms and Conditions</div>
+  </div>
+
+  <div class="main-button tc-btn">
+    <img src="/images/logout.png">
+    <span class="title">Sign Out</span>
+  </div>
+
+</template>
